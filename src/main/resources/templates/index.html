@@ -1,0 +1,42 @@
+{#let name=http:param('name', 'Qute')}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dag application</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        h1 {
+            color: #4695EB;
+            font-size: 2vw;
+        }
+
+        h1 b {
+            color: #be9100;
+        }
+
+        p {
+            font-size: 1vw;
+        }
+        
+        p b {
+            color: #be9100;
+        }
+    </style>
+</head>
+<body>
+<h1>Dag / Hello <b>Application</b></h1>
+
+<p>IP {ip}</p>
+<p>Uptime <b> {uptime} </b></p>
+
+<p>greeting.message <b> {hello-message} </b> </p>
+
+<p> db.user <b>{db-user}</b> </p>
+
+<p> db.password <b> {db-password} </b> </p>
+</body>
+</html>
